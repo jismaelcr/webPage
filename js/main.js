@@ -1,31 +1,47 @@
-let ubicacionPrincipal = window.pageYOffset; //0
 
-  AOS.init();
+document.addEventListener("DOMContentLoaded", function(event) {
+    console.log("DOM fully loaded and parsed");
 
-window.addEventListener("scroll", function(){
-    let desplazamientoActual = window.pageYOffset; //180
-    if(ubicacionPrincipal >= desplazamientoActual){ // 200 > 180
-        document.getElementsByTagName("nav")[0].style.top = "0px"
-    }else{
-        document.getElementsByTagName("nav")[0].style.top = "-100px"
-    }
-    ubicacionPrincipal= desplazamientoActual; //200
+    // new Glider(document.querySelector('.carousel__lista'),{
+    //   slidesToShow: 4,
+    //   slidesToScroll: 2,
+    //   draggable: true,
+    //   rewind: true,
+    //   dots: '.carousel_indicadores',
+    //   arrows: {
+    //       prev: '.carousel__anterior',
+    //       next: '.carousel__siguiente'
+    //   },
+    //   responsive: [
+    //    {
+    //       // screens greater than >= 775px
+    //       breakpoint: 450,
+    //       settings: {
+    //         // Set to `auto` and provide item width to adjust to viewport
+    //         slidesToShow: 8,
+    //         slidesToScroll: 4 /*,
+    //         itemWidth: 150,
+    //         duration: 0.25*/
+    //       }
+    //     },{
+    //       // screens greater than >= 1024px
+    //       breakpoint: 800,
+    //       settings: {
+    //         slidesToShow: 10,
+    //         slidesToScroll: 5/*,
+    //         itemWidth: 150,
+    //         duration: 0.25*/
+    //       }
+    //     }
+    //   ]
+    // });
+  });
 
-})
+const hamburguer = document.querySelector('.hamburguer')
+const menu = document.querySelector('.menu-navegacion')
+const closeVLight = document.querySelector('.closeV')
+const closePLight = document.querySelector('.closeP')
 
-// Menu
-
-let enlacesHeader = document.querySelectorAll(".enlaces-header")[0];
-let semaforo = true;
-
-document.querySelectorAll(".hamburguer")[0].addEventListener("click", function(){
-    if(semaforo){
-        document.querySelectorAll(".hamburguer")[0].style.color ="#fff";
-        semaforo= false;
-    }else{
-        document.querySelectorAll(".hamburguer")[0].style.color ="#000";
-        semaforo= true;
-    }
-
-    enlacesHeader.classList.toggle("menudos")
+hamburguer.addEventListener('click', ()=>{
+    menu.classList.toggle("spread")
 })
