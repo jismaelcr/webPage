@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>ElectroInformática de Los Mochis</title>
     <link rel="icon" type="image/png" href="/img/robot2.png" />
-    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
@@ -20,15 +23,26 @@
             <a href="#expertos">Expertos</a>
             <a href="#footer">Contacto</a>
         </nav>
+
         <div class="contenedor head">
-            <h1 class="titulo">Ponemos la tecnologia en sus manos, para hacer de su vida más facil !</h1>
-            <p class="copy"><strong>Convertimos su necesidad tecnologica en una realidad confiable y economica que supera la expectativa, con responsabilidad y ética, pero sobre todo con muchas ganas de servir.</strong></p>
+            <h1 class="titulo">Ponemos la tecnologia en sus manos, para hacerle su vida más facil !</h1>
+            <p class="copy"><strong>Convertimos su necesidad tecnológica en una realidad confiable y económica que supera la expectativa, con responsabilidad y ética, pero sobre todo con muchas ganas de servir.</strong></p>
         </div>
     </header>
-
+    <!--
+    <div class="cabeza">
+        <div class="video-container" id="myHeader">
+            <video autoplay loop class="fillWidth">
+             <source src="https://morning-shelf-6185.herokuapp.com/assets/2015-01-01-bokeh-6e0d97b003dff1c88b95db3126cd4788.mp4" type="video/mp4; "/>        
+             Your browser does not support the video tag.
+            </video>
+            <h2>My Header</h2>
+        </div>
+    </div>
+    -->
     <main>
         <section class="services contenedor" id="servicio">
-            <h2 class="subtitulo">Nuestros servicios:</h2>
+            <h2 class="subtitulo">Nuestros servicios</h2>
             <div class="contenedor-servicio">
                 <img src="img/checklist.png" alt="">
                 <div class="checklist-servicio">
@@ -58,7 +72,7 @@
 
         <section class="gallery" id="galeria">
             <div class="contenedor">
-                <h2 class="subtitulo">Portafolio:</h2>
+                <h2 class="subtitulo">Portafolio</h2>
                 <div class="contenedor-galeria">
                     <img src="img/img1.jpg" alt="" class="img-galeria">
                     <img src="img/img2.jpg" alt="" class="img-galeria">
@@ -67,17 +81,22 @@
                     <img src="img/img5.jpg" alt="" class="img-galeria">
                     <img src="img/img6.jpg" alt="" class="img-galeria">
                     <img src="img/img7.jpg" alt="" class="img-galeria">
+                    <video src="img/Alexa.mp4" alt="" poster="img/alexaPict.jpg" class="img-galeria"> </video>
                 </div>
             </div>
         </section>
 
         <section class="imagen-light">
-            <img src="img/close.svg" alt="" class="close">
+            <img src="img/close.svg" alt="" class="closeP">
             <img src="" alt="" class="agregar-imagen">
+        </section>
+        <section class="video-light">
+            <img src="img/close.svg" alt="" class="closeV">
+            <video src="" alt="" controls autoplay loop class="agregar-video"></video>
         </section>
 
         <section class="contenedor" id="expertos">
-            <h2 class="subtitulo">A sus ordenes:</h2>
+            <h2 class="subtitulo">Expertos en:</h2>
             <section class="experts">
                 <div class="cont-expert">
                     <img src="img/soft5.png" alt="">
@@ -99,12 +118,254 @@
         </section>
     </main>
 
+    
+    <div class="slider">
+
+        <div class="slide-track">
+        
+                <div class="slide">
+                    <img src="img/carrousel/acer.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/acteck.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/adata.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/amd.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/apc.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/asus.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/benq.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/cisco.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/dell.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/epson.png"  >
+               </div>
+                <div class="slide">
+                    <img src="img/carrousel/gigabyte.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/hewlett_packard.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/hisense.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/honeywell.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/hp.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/intel.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/intellinet.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/kaspersky.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/kensington.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/kingston technology.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/koblenz.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/kyocera.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/lanix.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/lenovo.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/lg.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/linksys.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/logitech.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/manhattan.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/microsoft.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/perfect choice.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/samsung.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/seagate.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/silimex.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/smartbitt.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/sola basic.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/techzone.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/tp-link.png"  >
+                </div>
+
+                <!-- Doble -->
+
+                <div class="slide">
+                    <img src="img/carrousel/acer.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/acteck.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/adata.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/amd.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/apc.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/asus.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/benq.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/cisco.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/dell.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/epson.png"  >
+               </div>
+                <div class="slide">
+                    <img src="img/carrousel/gigabyte.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/hewlett_packard.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/hisense.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/honeywell.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/hp.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/intel.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/intellinet.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/kaspersky.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/kensington.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/kingston technology.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/koblenz.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/kyocera.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/lanix.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/lenovo.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/lg.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/linksys.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/logitech.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/manhattan.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/microsoft.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/perfect choice.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/samsung.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/seagate.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/silimex.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/smartbitt.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/sola basic.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/techzone.png"  >
+                </div>
+                <div class="slide">
+                    <img src="img/carrousel/tp-link.png"  >
+                </div>
+
+        </div>
+      
+    </div>
+
+
     <footer id="footer">
         <div class="contenedor footer-content">
                 <div class="contact-us">
-                    <h2 class="brand">ElectroInformática de Los Mochis</h2>
-                    <h2>ElectroInformática de Los Mochis</h2>
-                    <p>Hacemos realidad su necesidad tecnologica</p>
+                    <h2 class="brand">ElectroInformática</h2>
+                    <h2 >Soluciones tecnológicas</h2>
+                    
+                    <div class="contactarme">
+                        <p>Puedes contactarme a través de:</p>
+                        <a href="mailto:jismaelcr@hotmail.com;joseismaelcastroruiz@gmail.com"> <i class='bx bx-mail-send'></i> </a>
+                        <a href="tel:+526682307644"><i class='bx bx-phone-call'></i></a>
+                        <a href="#"><i class='bx bx-comment-detail'></i></a>
+                    </div>
                 </div>
                 <div class="social-media">
                     <a href="https://www.facebook.com/joseismael.castroruiz.1972" class="social-media-icon">
@@ -120,7 +381,10 @@
         </div>
         <div class="line"></div>
     </footer>
+
     
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/menu.js"></script>
     <script src="js/lightbox.js"></script>
