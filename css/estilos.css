@@ -10,6 +10,9 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    /*place-items: center;*/
 }
 
 .contenedor{
@@ -38,6 +41,7 @@ header{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;  
+    overflow: hidden;
 }
 
 .head{
@@ -50,7 +54,57 @@ header{
     /*align-items: center;*/
     color:rgb(5, 6, 71);  
 }
-    
+
+/* Style the header
+.cabeza {
+    padding: 20px 16px;
+    background: #555;
+    color: #f1f1f1;
+
+    display: flex;
+    flex-direction: column;
+
+    top: 0%;
+  left: 0%;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  }
+   */
+  /* Page content 
+  .content {
+    padding: 16px;
+  }*/
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position 
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  */
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) 
+ 
+  .sticky + .content {
+  
+    padding-top: 102px;
+  }
+   */
+/*
+.video-container 
+{
+  top: 0%;
+  left: 0%;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  
+}
+video.fillWidth {
+  width: 100%;
+}
+*/
+
 .hamburguer{
     position: fixed;
     top: 30px;
@@ -172,7 +226,8 @@ header{
     cursor: pointer;
 }
 
-.imagen-light{
+.imagen-light,
+.video-light{
     position: fixed;
     display: flex;
     align-items: center;
@@ -186,14 +241,16 @@ header{
     transition: transform .2s ease-in-out;
 }
 
-.agregar-imagen{
+.agregar-imagen,
+.agregar-video{
     width: 60%;
     transform: scale(0);
     border-radius: 10px;
     transition: transform .3s .2s;
 }
 
-.showImage{
+.showImage,
+.showVideo{
     transform: scale(1);
 }
 
@@ -201,12 +258,17 @@ header{
     transform: translate(0);
 }
 
-.close{
+.closeV,
+.closeP{
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 30px;
+    right: 30px;
+    background: #fff;
     width: 40px;
+    height: 40px;
     cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
 .experts{
@@ -222,7 +284,10 @@ header{
     text-align: center;
     margin-bottom: 20px;
 }
-
+.cont-expert h3{
+    font-size: 28px;
+    color: #162D5F;
+}
 .cont-expert img{
     display: block;
     margin: auto;
@@ -288,6 +353,15 @@ footer{
     line-height: 60px;
 }
 
+.contactarme{
+    display: flex;
+}
+.contactarme i{
+    margin-left: 20px;
+    font-size: 30px;
+    color: #fff;
+}
+
 .line{
     width: 90%;
     max-width: 1200px;
@@ -301,6 +375,76 @@ footer{
     background: #fff;
     color:#764ba2;
 }
+
+
+
+
+.slider{
+    height: 100px;
+    margin:auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items:center;
+    overflow: hidden;
+}
+
+.slide-track{
+    display: flex;
+    width: calc(150px * 74);
+    animation: scroll 90s linear infinite;
+}
+
+.slide-track:hover{
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0%{ transform: translateX(0);}
+    100%{ transform: translateX(calc(-150px * 37));}
+}
+.slide{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    perspective: 100px;
+}
+
+img{
+    width: 80%;
+    transition: transform 1.5s;
+}
+
+img:hover{
+   transform: translateZ(40px);
+}
+
+/* Gradient Shadows
+.slide::before,
+.slide::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0)100%);
+    content:'';
+    height: 100%;
+    position: absolute;
+    width:15%;
+    z-index: 2;
+}
+
+.slide::before{
+    left:0;
+    top:0;
+}
+
+.slide::after {
+    right:0;
+    top:0;
+    transform: rotateZ(180deg);
+}
+*/
+
+
 
 
 /* Breakpoints responsive */
@@ -353,12 +497,15 @@ footer{
         margin-left: 0;
     }
 
+    .contactarme{
+        display: inline-block;
+    }
+
     .contact-us{
         text-align: center;
         width: 90%;
         margin-bottom: 40px;
     }
-    
 }
 
 
@@ -376,8 +523,16 @@ footer{
         font-size: 30px;
     }
 
+    .brand{
+        font-size: 28px;
+    }
+
+    .copy{
+        font-size: 18px;
+    }
+
     .subtitulo{
-        font-size: 30px;
+        font-size: 15px;
     }
 
     .img-galeria{
